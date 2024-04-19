@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musicbar</title>
+    <style>
+        .box1{
+            width: 30px; height: 30px;
+            background-color: rgb(235, 133, 0);
+            border-radius: 20px;
+            position: absolute;
+            bottom: 0px;
+            left: 50px;
+            animation: box1 2s ease 1s infinite;
+        }
+        @keyframes box1 {
+            0%{
+                height: 30px;
+                background-color: blue;
+            }
+            50%{
+                height: 400px;
+                background-color: blueviolet;
+            }
+            100%{
+                height: 30px;
+                background-color: aqua;
+            } 
+        }
+        .box2{
+            width: 30px; height: 30px;
+            background-color: rgb(235, 133, 0);
+            border-radius: 20px;
+            position: absolute;
+            z-index: 3;
+            bottom: 0px;
+            left: 100px;
+            animation: box2 2s ease 1s infinite;
+            animation-direction: reverse;
+
+        }
+        @keyframes box2 {
+            0%{
+                height: 30px;
+                background-color: rgb(255, 4, 0);
+            }
+            50%{
+                height: 350px;
+                background-color: rgb(3, 0, 6);
+            }
+            100%{
+                height: 30px;
+                background-color: rgb(247, 255, 4);
+            } 
+        }
+        .box3{
+            width: 30px; height: 30px;
+            background-color: rgb(225, 205, 178);
+            border-radius: 20px;
+            position: absolute;
+            bottom: 0px;
+            left: 150px;
+            animation: box3 2s ease 1s infinite;
+        }
+        @keyframes box3 {
+            0%{
+                height: 30px;
+                background-color: rgb(240, 6, 158);
+            }
+            50%{
+                height: 300px;
+                background-color: rgb(15, 232, 87);
+            }
+            100%{
+                height: 30px;
+                background-color: rgb(15, 240, 240);
+            } 
+        }
+        .box4{
+            width: 30px; height: 30px;
+            background-color: rgb(235, 133, 0);
+            border-radius: 20px;
+            position: absolute;
+            z-index: 3;
+
+            bottom: 0px;
+            left: 200px;
+            animation: box4 2s ease 1s infinite;
+            animation-direction: reverse;
+
+        }
+        @keyframes box4 {
+            0%{
+                height: 30px;
+                background-color: rgb(1, 238, 255);
+            }
+            50%{
+                height: 80px;
+                background-color: rgb(143, 206, 33);
+            }
+            100%{
+                height: 30px;
+                background-color: rgb(214, 14, 108);
+            } 
+        }
+        .box5{
+            width: 30px; height: 30px;
+            background-color: rgb(235, 133, 0);
+            border-radius: 20px;
+            position: absolute;
+            bottom: 0px;
+            left: 250px;
+            animation: box5 2s ease 1s infinite;
+        }
+        @keyframes box5 {
+            0%{
+                height: 30px;
+                background-color: blue;
+            }
+            50%{
+                height: 100px;
+                background-color: blueviolet;
+            }
+            100%{
+                height: 30px;
+                background-color: aqua;
+            } 
+        }
+        .box6{
+            width: 30px; height: 30px;
+            background-color: rgb(235, 133, 0);
+            border-radius: 20px;
+            position: absolute;
+            z-index: 3;
+            bottom: 0px;
+            left: 300px;
+            animation: box6 2.3s ease 1s infinite;
+        }
+        @keyframes box6 {
+            0%{
+                height: 30px;
+                background-color: rgb(255, 4, 0);
+            }
+            50%{
+                height: 300px;
+                background-color: rgb(3, 0, 6);
+            }
+            100%{
+                height: 30px;
+                background-color: rgb(247, 255, 4);
+            } 
+        }
+        .box7{
+            width: 30px; height: 30px;
+            background-color: rgb(225, 205, 178);
+            border-radius: 20px;
+            position: absolute;
+            bottom: 0px;
+            left: 350px;
+            animation: box7 2s ease 1s infinite;
+            animation-direction: reverse;
+
+        }
+        @keyframes box7 {
+            0%{
+                height: 30px;
+                background-color: rgb(240, 6, 158);
+            }
+            50%{
+                height: 350px;
+                background-color: rgb(15, 232, 87);
+            }
+            100%{
+                height: 30px;
+                background-color: rgb(15, 240, 240);
+            } 
+        }
+        .box8{
+            width: 30px; height: 30px;
+            background-color: rgb(235, 133, 0);
+            border-radius: 20px;
+            position: absolute;
+            bottom: 0px;
+            left: 400px;
+            animation: box8 2s ease 1s infinite;
+        }
+        @keyframes box8 {
+            0%{
+                height: 30px;
+                background-color: rgb(1, 238, 255);
+            }
+            50%{
+                height: 400px;
+                background-color: rgb(143, 206, 33);
+            }
+            100%{
+                height: 30px;
+                background-color: rgb(214, 14, 108);
+            } 
+        }
+        @keyframes img {
+            0%{
+                background-color: rgb(1, 238, 255);
+                box-shadow: 8px 8px 20px black;
+
+            }
+            50%{
+                background-color: rgb(143, 206, 33);
+                box-shadow: 20px 20px 100px red;
+
+            }
+            100%{
+                background-color: rgb(214, 14, 108);
+                box-shadow: 8px 8px 20px green;
+
+            } 
+        }
+        .audio{
+            text-align: center;
+            margin: 40px;
+         }
+         img{
+            width: 250px; height: 300px;
+            background-color: blue;
+            /* box-shadow: 8px 8px 20px; */
+            animation: img 2s ease 1s infinite;
+
+         }
+         div.bar{
+            text-align: center;
+            margin-left: 499px;
+            bottom: 0px;
+            width: 500px; height: 350px;
+            position: absolute;
+         }
+    </style>
+</head>
+<body>
+  <div class="bar">
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <div class="box5"></div>
+    <div class="box6"></div>
+    <div class="box7"></div>
+    <div class="box8"></div>
+  </div>
+    <div class="audio">
+        <img src="./pushpa2 image.jpeg" alt="image">
+        <br><br>
+        <audio controls  autoplay muted>
+            <source src="./pushpa2-bgm.mp3">
+        </audio>
+    </div>
+
+</body>
+</html>

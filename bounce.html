@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bouncing balls</title>
+    <style>
+
+        .ball1 {
+            background-color: blue;
+            left: 40px;
+            animation-name: bounce1;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 0;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+        }
+
+        .ball2 {
+            background-color: rgb(255, 217, 0);
+            left: 200px;
+            animation-name: bounce2;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 0;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            animation-direction: reverse;
+
+        }
+
+        .ball3 {
+            background-color: rgb(255, 42, 0);
+            left: 360px;
+            animation-name: bounce3;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 0;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+        }
+
+        .ball4 {
+            background-color: rgb(0, 232, 89);
+            left: 520px;
+            animation-name: bounce4;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 0;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            animation-direction: reverse;
+
+        }
+
+        @keyframes bounce1 {
+            0% {
+                bottom: 0;
+            }
+            50% {
+                bottom: 500px;
+            }
+        }
+
+        @keyframes bounce2 {
+            0% {
+                bottom: 0;
+            }
+            50% {
+                bottom: 500px;
+            }
+        }
+
+        @keyframes bounce3 {
+            0% {
+                bottom: 0;
+            }
+            50% {
+                bottom: 500px;
+            }
+        }
+
+        @keyframes bounce4 {
+            0% {
+                bottom: 0;
+            }
+            50% {
+                bottom: 500px;
+            }
+        }
+        div.line {
+            background-color: black;
+            width: 650px; height: 10px;
+            position: absolute;
+            bottom: 0px;  
+        }
+
+        .ballx1 {
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+            border-radius: 50px;
+            animation-name: bouncex1;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            margin-left: 40px;
+            animation-timing-function: ease-in-out;
+
+        }
+        .ballx2 {
+            width: 50px;
+            height: 50px;
+            background-color: rgb(9, 255, 103);
+            border-radius: 50px;
+            animation-name: bouncex2;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            margin-left: 200px;
+            animation-direction: reverse;
+            animation-timing-function: ease-in-out;
+
+
+        }
+        .ballx3 {
+            width: 50px;
+            height: 50px;
+            background-color: rgb(244, 0, 0);
+            border-radius: 50px;
+            animation-name: bouncex3;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            margin-left: 360px;
+            animation-timing-function: ease-in-out;
+
+        }
+        .ballx4 {
+            width: 50px;
+            height: 50px;
+            background-color: rgb(8, 185, 255);
+            border-radius: 50px;
+            animation-name: bouncex4;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            margin-left: 520px;
+            animation-direction: reverse;
+            animation-timing-function: ease-in-out;
+
+
+        }
+
+        @keyframes bouncex1 {
+            0% {
+                transform: translateY(630px);
+                /* Move up 500px with transform */
+                background-color: black;
+
+            }
+            50% {
+                transform: translateY(0px);
+                /* Move back to original position */
+                background-color: rgb(249, 211, 0);
+            }
+            100%{transform: translateY(630px);
+                /* Move up 500px with transform */
+                background-color: rgb(255, 10, 10);
+                height: 45px;
+
+
+            }
+        }
+        @keyframes bouncex2 {
+            0% {
+                transform: translateY(580px);
+                background-color: rgb(114, 1, 253);
+
+            }
+            50% {
+                transform: translateY(-50px);
+                background-color: rgb(233, 201, 20);
+            }
+            100%{transform: translateY(580px);
+                background-color: rgb(255, 0, 170);
+                height: 45px;
+
+
+
+            }
+        }
+        @keyframes bouncex3 {
+            0% {
+                transform: translateY(530px);
+                /* Move up 500px with transform */
+                background-color: rgb(217, 255, 0);
+
+            }
+            50% {
+                transform: translateY(-100px);
+                /* Move back to original position */
+                background-color: rgb(16, 239, 198);
+            }
+            100%{transform: translateY(530px);
+                /* Move up 500px with transform */
+                background-color: rgb(81, 8, 48);
+                height: 45px;
+
+
+
+            }
+        }
+        @keyframes bouncex4 {
+            0% {
+                transform: translateY(480px);
+                background-color: rgb(0, 224, 82);
+
+            }
+            50% {
+                transform: translateY(-150px);
+                background-color: rgb(233, 201, 20);
+            }
+            100%{transform: translateY(480px);
+                background-color: rgb(200, 227, 192);
+                height: 45px;
+
+
+
+            }
+        }
+        div.linex {
+            background-color: black;
+            width: 600px; height: 10px;
+            position: absolute;
+            bottom: 11px;  
+        }
+        div.whole{
+            width:650px ; height: 700px;
+            position: absolute;
+            left: 690px;
+            bottom: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div class="ball1"></div>
+    <div class="ball2"></div>
+    <div class="ball3"></div>
+    <div class="ball4"></div>
+    <div class="line"></div>
+     
+    <div class="whole">
+        <div class="ballx1"></div>
+        <div class="ballx2"></div>
+        <div class="ballx3"></div>
+        <div class="ballx4"></div>
+        <div class="linex"></div>
+    <div>
+</body>
+</html>
